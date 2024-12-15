@@ -504,7 +504,7 @@ class Flexible extends Field
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array|string
      */
-    public function getCreationRules(NovaRequest $request)
+    public function getCreationRules(NovaRequest $request): array
     {
         return array_merge_recursive(
             parent::getCreationRules($request),
@@ -518,7 +518,7 @@ class Flexible extends Field
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
-    public function getUpdateRules(NovaRequest $request)
+    public function getUpdateRules(NovaRequest $request): array
     {
         return array_merge_recursive(
             parent::getUpdateRules($request),
