@@ -493,7 +493,7 @@ class Flexible extends Field
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
-    public function getRules(NovaRequest $request)
+    public function getRules(NovaRequest $request): array
     {
         return parent::getRules($request);
     }
